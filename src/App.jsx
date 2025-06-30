@@ -69,7 +69,7 @@ const App = () => {
 
   const handleDelete = async (id) => {
     const confirmDelete = window.confirm('Are you sure you want to delete this todo?');
-    if (!confirmDelete) return;w
+    if (!confirmDelete) return;
     try {
       await fetch(`${BASE_URL}/todos/${id}`, {
         method: 'DELETE',
